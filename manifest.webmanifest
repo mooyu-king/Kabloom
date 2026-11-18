@@ -1,0 +1,16 @@
+{
+  "id": "/",
+  "name": "Kabloom Sky Climb Guide",
+  "short_name": "Kabloom",
+  "description": "A field guide and score calculator for Sky Climb trivia.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#161d31",
+  "background_color": "#141a2a",
+  "icons": [
+    { "src": "/images/kabloom-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/images/kabloom-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
