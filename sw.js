@@ -1,6 +1,6 @@
 /* 版本与文件名单由静态构建生成。 */
-const cacheName = "kabloom-static-c0376d9cd96f95";
-const precache = ["/about/","/contact/","/images/kabloom-guide-ladder.webp","/images/kabloom-guide-prompt.webp","/images/kabloom-guide-results.webp","/images/kabloom-guide-spent.webp","/images/kabloom-icon-192.png","/images/kabloom-icon-512.png","/images/kabloom-logo.svg","/images/kabloom-logo.webp","/images/kabloom-sky-climb-cover.webp","/","/manifest.webmanifest","/offline.html","/privacy/","/scores.mjs","/site.css","/site.mjs","/terms/"];
+const cacheName = "kabloom-static-888aad117db852";
+const precache = ["/about/","/contact/","/images/kabloom-guide-ladder.webp","/images/kabloom-guide-prompt.webp","/images/kabloom-guide-results.webp","/images/kabloom-guide-spent.webp","/images/kabloom-icon-192.png","/images/kabloom-icon-512.png","/images/kabloom-logo.svg","/images/kabloom-logo.webp","/images/kabloom-sky-climb-cover.webp","/","/manifest.webmanifest","/medical-art/medical-krillion-cover.webp","/medical-art/medical-krillion-feedback.webp","/medical-art/medical-krillion-routine.webp","/medical-art/medical-krillion-strategy.webp","/medical-guide.css","/medical-krillion/","/offline.html","/privacy/","/scores.mjs","/site.css","/site.mjs","/terms/"];
 const allowed = new Set(precache);
 
 self.addEventListener('install', event => {

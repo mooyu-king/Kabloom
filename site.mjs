@@ -231,3 +231,5 @@ if (player) {
   scoreForm.addEventListener('change', updateScore);
   scoreForm.addEventListener('reset', () => requestAnimationFrame(updateScore));
 }
+
+for(const button of document.querySelectorAll('[data-pause-updates]'))button.addEventListener('click',()=>{const ticker=button.closest('.medical-updates');const paused=ticker.dataset.paused!=='true';ticker.dataset.paused=String(paused);button.setAttribute('aria-pressed',String(paused));button.setAttribute('aria-label',paused?'Resume updates':'Pause updates');button.title=paused?'Resume updates':'Pause updates';button.textContent=paused?'▶':'Ⅱ'});
