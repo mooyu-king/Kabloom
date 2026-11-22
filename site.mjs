@@ -233,3 +233,20 @@ if (player) {
 }
 
 for(const button of document.querySelectorAll('[data-pause-updates]'))button.addEventListener('click',()=>{const ticker=button.closest('.medical-updates');const paused=ticker.dataset.paused!=='true';ticker.dataset.paused=String(paused);button.setAttribute('aria-pressed',String(paused));button.setAttribute('aria-label',paused?'Resume updates':'Pause updates');button.title=paused?'Resume updates':'Pause updates';button.textContent=paused?'▶':'Ⅱ'});
+
+// 保留原生 details 的触屏与键盘切换，补齐浮层退出行为。
+for (const menu of document.querySelectorAll('.medical-more')) {
+  document.addEventListener('click', event => {
+    if (!menu.contains(event.target)) menu.open = false;
+  });
+  menu.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.open) {
+      menu.open = false;
+      menu.querySelector('summary').focus();
+      event.preventDefault();
+    }
+  });
+  menu.addEventListener('click', event => {
+    if (event.target.closest('a')) menu.open = false;
+  });
+}
